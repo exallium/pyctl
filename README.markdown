@@ -2,10 +2,10 @@
 
 ## USAGE:
 
-    :::shell
-    ```
-    $ python2 pyctl.py
-    ```
+:::shell
+```
+$ python2 pyctl.py
+```
 
 ## Click Commands
 
