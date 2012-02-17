@@ -2,8 +2,8 @@
 
 ## USAGE:
 
-:::shell
 ```
+:::shell
 $ python2 pyctl.py
 ```
 
