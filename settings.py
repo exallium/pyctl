@@ -3,7 +3,7 @@
 
 # Server Settings
 HOST='0.0.0.0'
-PORT=48000
+PORT=50000
 
 # Mouse buttons
 LEFT=1

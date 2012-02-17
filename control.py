@@ -1,5 +1,8 @@
 import os
 
+def type_keys(string):
+    os.system("xdotool type \"%s\"" % " ".join(string))
+
 def click_mouse(button):
     os.system("xdotool click %s" % button[0])
 
@@ -12,7 +15,8 @@ def move_mouse(args):
 
 def start_control(client):
     comm = { 'click': click_mouse, 
-             'move' : move_mouse }
+             'move' : move_mouse,
+             'type' : type_keys,}
 
     data = ['']
     while(data[0] != 'exit'):
