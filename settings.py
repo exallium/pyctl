@@ -12,3 +12,10 @@ RIGHT=3
 SCROLLUP=4
 SCROLLDOWN=5
 
+TAP_ACTIONS = (
+        None,
+        LEFT,
+        RIGHT,
+        MIDDLE,
+    )
+

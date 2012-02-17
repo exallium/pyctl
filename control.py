@@ -1,5 +1,6 @@
 import os
 from subprocess import check_output
+from settings import TAP_ACTIONS
 
 def get_windowsize():
     dim = check_output(["/usr/bin/xdotool", "getdisplaygeometry"])
@@ -9,7 +10,7 @@ def type_keys(string):
     os.system("xdotool type \"%s\"" % " ".join(string))
 
 def click_mouse(button):
-    os.system("xdotool click %s" % button[0])
+    os.system("xdotool click %s" % TAP_ACTIONS[int(button[0])])
 
 size = get_windowsize()
 def move_mouse(args):
@@ -20,7 +21,6 @@ def move_mouse(args):
 
     x = float(args[1]) * float(size[0])
     y = float(args[2]) * float(size[1])
-    print x, y
     os.system('xdotool %s -- %s %s' % (comm, x, y))
 
 def start_control(client):
