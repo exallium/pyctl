@@ -1,10 +1,10 @@
 # PyCTL -- Mouse Control via Python for Linux
 
 ## USAGE:
-
-:::shell
-$ python2 pyctl.py
-
+```
+    :::shell
+    $ python2 pyctl.py
+```
 ## Click Commands
 
 * All generalized to one function called click\_mouse
